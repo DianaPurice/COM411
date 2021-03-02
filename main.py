@@ -1,37 +1,13 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-print("Hello")
-import basics.output.simple_message as simple_message
-import basics.output.multiline_message as multiline_message
+print("How many times to print the symbol?")
+x = int(input())
 
-def run_block_a():
-    print("Which program in 'Block A: Basics' do you wish to run?")
-    response = input()
-    if (response == "simple_message"):
-        simple_message.run()
-    elif (response == "multiline_message"):
-        multiline_message.run()
+# i is a counter. it keeps track of how many times we went through the loop
+i = 0
 
 
-def run():
-    is_running = True
+while i < x: # condition for reapeating the code - as long as i lower than x
+  print("\u27BD \n", i)
+  i += 1 # new value of the counter is one more than the counter
+print("We left the loop")
 
-    while(is_running):
-        print("What would you like to do?")
-        print("[a] Run 'Block A: Basics' programs")
-        print("[q] Quit")
-        response = input()
-
-        if (response == "a"):
-            run_block_a()
-        elif (response == "q"):
-            break
-        else:
-            print("Invalid option! Please try again.")
-
-run()
-=======
-print("Hello")
->>>>>>> acb8a49d65412440b92e23e73083bce843a695a6
->>>>>>> 962869224b5c8d24c365786527aca99e66e18400
+# u can set i to 1 and change i < x to i <= x !not good for computer
