@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 print("Hello")
 import basics.output.simple_message as simple_message
 import basics.output.multiline_message as multiline_message
@@ -28,3 +29,6 @@ def run():
             print("Invalid option! Please try again.")
 
 run()
+=======
+print("Hello")
+>>>>>>> acb8a49d65412440b92e23e73083bce843a695a6
