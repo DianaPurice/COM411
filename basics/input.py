@@ -7,7 +7,7 @@ print("What is your bank balange?")
 bank = float(input())
 print("Welcome {}. You are said to be {} years old. Your bank balance is{}.".format(name, age, bank))
 
-
+# play with bool(input()) for true and false 
 if len(name) > 9:
   print("You have a really long name!")
 print("This is the END of the program!")
