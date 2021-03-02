@@ -1,30 +1,20 @@
-print("Hello")
-import basics.output.simple_message as simple_message
-import basics.output.multiline_message as multiline_message
 
-def run_block_a():
-    print("Which program in 'Block A: Basics' do you wish to run?")
-    response = input()
-    if (response == "simple_message"):
-        simple_message.run()
-    elif (response == "multiline_message"):
-        multiline_message.run()
+# print(type(variable))
+print("what is your name?")
+name = input()
+print("What is your age?")
+age = int(input())
+print("What is your bank balange?")
+bank = float(input())
+print("Welcome {}. You are said to be {} years old. Your bank balance is{}.".format(name, age, bank))
 
-
-def run():
-    is_running = True
-
-    while(is_running):
-        print("What would you like to do?")
-        print("[a] Run 'Block A: Basics' programs")
-        print("[q] Quit")
-        response = input()
-
-        if (response == "a"):
-            run_block_a()
-        elif (response == "q"):
-            break
-        else:
-            print("Invalid option! Please try again.")
-
-run()
+# play with bool(input()) for true and false = boolean datatype
+if len(name) > 9:
+  print("You have a really long name!")
+elif len(name) > 6:
+  print("Your name is a bit long. Consider a nickname.")
+elif len(name) < 3:
+  print("Your name is veeery short")
+else:
+  print("Your name is quite okay")
+print("This is the END of the program!")
