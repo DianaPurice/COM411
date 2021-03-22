@@ -1,14 +1,10 @@
-# Display the initial message
-print("Calculating the sum of the first 100 numbers...")
+print("Calculating the sum of the first nunbers...")
 
-# Create variables
-x = 1
-y = 0
+n = 0
+t = 0
 
-# Use a while loop to calculate the sum
-while (x <= 100):
-  y = x + y
-  x = x + 1
+while n <= 100:
+  t = t + n
+  n +=1
 
-# Display result
-print("\nThe result is ", y)
+print(t)

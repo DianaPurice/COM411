@@ -1,14 +1,11 @@
-# Display initial message
+# Ask user for a phrase
 print("Please enter a phrase:")
 p = input()
 
-# print blank
-print()
+# Create variable to count how many chartacters the phrase has
+n= 0
 
-# Create variable for bops
-b = 0
-
-# Read in user response and display message
-while b < len(p):
+# Use while loop to display bop instead of characters
+while n < len(p):
   print("Bop ", end="")
-  b +=1
+  n = n + 1
