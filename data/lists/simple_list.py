@@ -7,6 +7,8 @@ def directions():
 
 # Create function run
 def run():
+  # Display list directions
   print(directions())
 
+# Call function run
 run()
