@@ -47,7 +47,7 @@ import basics.modules.guess_the_number as guess_the_number
 
 def run_block_a():
     print("Which program in 'Block A: Basics (Output/Input)' do you wish to run?")
-    response = 0
+    response = input()
     if (response == "simple_message"):
         simple_message.run()
     elif (response == "multiline_message"):
@@ -195,8 +195,8 @@ def run():
         elif (response == "q"):
             break
         else:
-          print("Invalid option! Please try again.")
+          print("\nInvalid option! Please try again.\n")
 
-print(run())
+run()
 
 
