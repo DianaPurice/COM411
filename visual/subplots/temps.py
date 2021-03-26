@@ -20,8 +20,9 @@ def run():
   data = read_data("visual/subplots/temps.txt")
   # create subplots
   fig, (ax1, ax2) = plt.subplots(1, 2)
-  # 
+  # Display data as a line graph
   ax1.plot(range(len(data)), data)
+  # Display data as bar chart
   ax2.bar(range(len(data)), data)
   # Display plot
   plt.show()
