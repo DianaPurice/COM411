@@ -46,126 +46,173 @@ import basics.functions.function_calls as function_calls
 import basics.modules.guess_the_number as guess_the_number
 
 def run_block_a():
-    print("Which program in 'Block A: Basics (Output/Input)' do you wish to run?")
+  is_running = True
+  while(is_running):
+    print("\nWhich program in 'Block A: Basics (Output/Input)' do you wish to run?")
+    print()
+    print("[1] simple_message")
+    print("[2] multiline_message")
+    print("[3] escape_characters")
+    print("[4] ascii_art")
+    print("[5] user_input")
+    print("[6] ascii_robot")
+    print("[7] data_types")
+    print("[8] string_operators")
+    print("[9] input_review")
+    print("[10] quit")
+    print()
     response = input()
-    if (response == "simple_message"):
+    if (response == "1"):
         simple_message.run()
-    elif (response == "multiline_message"):
+    elif (response == "2"):
         multiline_message.run()
-    elif (response == "escape_characters"):
+    elif (response == "3"):
         escape_characters.run()
-    elif (response == "ascii_art"):
+    elif (response == "4"):
         ascii_art.run()
-    elif (response == "user_input"):
+    elif (response == "5"):
         user_input.run()
-    elif (response == "ascii_robot"):
+    elif (response == "6"):
         ascii_robot.run()
-    elif (response == "data_types"):
+    elif (response == "7"):
         data_types.run()
-    elif (response == "string_operators"):
+    elif (response == "8"):
         string_operators.run()
-    elif (response == "input_review"):
+    elif (response == "9"):
         input_review.run()
+    elif (response == "10"):
+      break
     else:
-      print("Invalid option! Please try again.")
+      print("\nInvalid option! Please try again.\n")
     
 def run_block_b():
-  print("Which program in 'Block B: Basics (Decisions)' do you wish to run?'")
-  response = input()
-  if (response == "if_op"):
-       if_op.run()
-  elif (response == "if_else"):
-       if_else.run()
-  elif (response == "if_elif_else"):
-       if_elif_else.run()
-  elif (response == "modulo_operator"):
-        modulo_operator.run()
-  elif (response == "comperation_operator"):
-        comperation_operator.run()
-  elif (response == "counter"):
-        counter.run()
-  elif (response == "nested"):
-        nested.run()
-  elif (response == "nestception"):
-        nestception.run()
-  elif (response == "or_operator"):
-        or_operator.run()
-  elif (response == "and_operator"):
-        and_operator.run()
-  elif (response == "decision_review"):
-       decision_review.run()
-  else:
-      print("Invalid option! Please try again.")
+  is_running = True
+  while is_running:
+    print("\nWhich program in 'Block B: Basics (Decisions)' do you wish to run?\n")
+    print("[1] if_op\n[2] if_else\n[3] if_elif_else\n[4] modulo_operator\n[5] comperation_operator\n[6] counter\n[7] nested\n[8] nestception\n[9] or_operator\n[10] and_operator\n[11] decision_review\n[12] quit\n")
+    response = input()
+    if (response == "1"):
+          if_op.run()
+    elif (response == "2"):
+          if_else.run()
+    elif (response == "3"):
+          if_elif_else.run()
+    elif (response == "4"):
+            modulo_operator.run()
+    elif (response == "5"):
+            comperation_operator.run()
+    elif (response == "6"):
+            counter.run()
+    elif (response == "7"):
+            nested.run()
+    elif (response == "8"):
+            nestception.run()
+    elif (response == "9"):
+            or_operator.run()
+    elif (response == "10"):
+            and_operator.run()
+    elif (response == "11"):
+          decision_review.run()
+    elif (response == "12"):
+      break
+    else:
+        print("Invalid option! Please try again.")
 
 def run_block_c1():
-  print("Which program in 'Block C: Basics (Repetitions: Part 1)' do you wish to run?'")
-  response = input()
-  if (response == "simple_while"):
-      simple_while.run()
-  elif (response == "count_while"):
-      count_while.run()
-  elif (response == "ascii_while"):
-      ascii_while.run()
-  elif (response == "len_while"):
-      len_while.run()
-  elif (response == "sum_100"):
-      sum_100.run()
-  elif (response == "sum_user_numbers"):
-      sum_user_numbers.run()
-  elif (response == "factorial"):
-      factorial.run()
-  elif (response == "simple_for"):
-      simple_for.run()
-  elif (response == "count_down"):
-      count_down.run()
-  elif (response == "range_for"):
-      range_for.run()
-  elif (response == "characters_for"):
-      characters_for.run()
-  elif (response == "reverse"):
-      reverse.run()
-  elif (response == "membership_operators"):
-      membership_operators.run()
-  else:
-    print("Invalid option! Please try again.")
+  is_running = True
+  while is_running:
+    print("Which program in 'Block C: Basics (Repetitions: Part 1)' do you wish to run?'")
+    print("""[1] simple_while
+[2] count_while
+[3] ascii_while
+[4] len_while
+[5] sum_100
+[6] sum_user_numbers
+[7] factorial
+[8] simple_for
+[9] count_down
+[10] range_for
+[11] characters_for
+[12] quit """)
+    response = input()
+    if (response == "1"):
+        simple_while.run()
+    elif (response == "2"):
+        count_while.run()
+    elif (response == "3"):
+        ascii_while.run()
+    elif (response == "4"):
+        len_while.run()
+    elif (response == "5"):
+        sum_100.run()
+    elif (response == "6"):
+        sum_user_numbers.run()
+    elif (response == "7"):
+        factorial.run()
+    elif (response == "8"):
+        simple_for.run()
+    elif (response == "9"):
+        count_down.run()
+    elif (response == "10"):
+        range_for.run()
+    elif (response == "11"):
+        characters_for.run()
+    elif (response == "12"):
+        break
+    else:
+      print("Invalid option! Please try again.")
 
 def run_block_c2():
-  print("Which program in 'Block C: Basics (Repetitions: Part 2)' do you wish to run?'")
-  response = input()
-  if (response == "nested_for"):
-      nested_for.run()
-  elif (response == "nesting"):
-      nesting.run()
-  else:
-    print("Invalid option! Please try again.")
+  is_running = True
+  while is_running:
+    print("Which program in 'Block C: Basics (Repetitions: Part 2)' do you wish to run?'")
+    print("[1] reverse\n[2] membership_operators\n[3] nested_for\n[4] nesting\n[5] quit")
+    response = input()
+    if (response == "1"):
+        reverse.run()
+    elif (response == "2"):
+        membership_operators.run()
+    elif (response == "3"):
+        nested_for.run()
+    elif (response == "4"):
+        nesting.run()
+    elif (response == "5"):
+      break
+    else:
+      print("Invalid option! Please try again.")
 
 def run_block_d():
-  print("Which program in 'Block D: Basics (Funcions and Modules)' do you wish to run?'")
-  response = input()
-  if (response == "ascii_code"):
-     ascii_code.run()
-  elif (response == "ascii_character"):
-      ascii_character.run()
-  elif (response == "simple_function"):
-      simple_function.run()
-  elif (response == "function_with_nesting"):
-      function_with_nesting.run()
-  elif (response == "function_with_parameter"):
-      function_with_parameter.run()
-  elif (response == "function_with_loop"):
-      function_with_loop.run()
-  elif (response == "function_with_parameters"):
-      function_with_parameters.run()
-  elif (response == "multiple_functions"):
-      multiple_functions.run()
-  elif (response == "return_values"):
-      return_values.run()
-  elif (response == "function_calls"):
-      function_calls.run()
-  elif (response == "guess_the_number"):
-      guess_the_number.run
-  else:
-    print("Invalid option! Please try again.")
+  is_running = True
+  while is_running:
+    print("Which program in 'Block D: Basics (Funcions and Modules)' do you wish to run?'")
+    print("[1] ascii_code\n[2] ascii_character\n[3] simple_function\n[4] function_with_nesting\n[5] function_with_parameter\n[6] function_with_loop\n[7] function_with_parameters\n[8] multiple_functions\n[9] return_values\n[10] function_calls\n[11] guess_the_number\n[12] quit")
+    response = input()
+    if (response == "1"):
+      ascii_code.run()
+    elif (response == "2"):
+        ascii_character.run()
+    elif (response == "3"):
+        simple_function.run()
+    elif (response == "4"):
+        function_with_nesting.run()
+    elif (response == "5"):
+        function_with_parameter.run()
+    elif (response == "6"):
+        function_with_loop.run()
+    elif (response == "7"):
+        function_with_parameters.run()
+    elif (response == "8"):
+        multiple_functions.run()
+    elif (response == "9"):
+        return_values.run()
+    elif (response == "10"):
+        function_calls.run()
+    elif (response == "11"):
+        guess_the_number.run
+    elif (response == "12"):
+      break
+    else:
+      print("Invalid option! Please try again.")
 
 
 
@@ -173,13 +220,13 @@ def run():
     is_running = True
 
     while(is_running):
-        print("What would you like to do?")
+        print("What would you like to do?\n")
         print("[a] Run 'Block A: Basics (Output/Input)' programs")
         print("[b] Run 'Block B: Basics (Decisions)' programs")
         print("[c1] Run 'Block C1: Basics (Repetitions: Part 1)' programs")
         print("[c2] Run 'Block C2: Basics (Repetitions: Part 2)' programs")
         print("[d] Run 'Block D: Basics (Functions and Modules)' programs")
-        print("[q] Quit")
+        print("[q] Quit\n")
         response = input()
 
         if (response == "a"):
