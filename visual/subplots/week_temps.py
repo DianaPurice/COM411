@@ -10,6 +10,7 @@ def read_data():
     # create variable
     csv_reader = csv.reader(file)
     # create empty dictionary 
+    header = next(csv_reader)
     data = {'week1':[], 'week2':[]}
     # read file
     for line in csv_reader:
