@@ -1,32 +1,36 @@
 import matplotlib.pyplot as plt
 import csv
 
-# create funtion read_data
 def read_data():
-  data = {"survived":[], "sex":[], "age":[], "fare":[]}
+  data = {'survived':[], 'sex':[], 'age':[], 'fare':[]}
 
-  with open("visual/subplots/titanic.csv") as file:
+  with open('visual/subplots/titanic.csv') as file:
     csv_reader = csv.reader(file)
 
+    # ignore header
     header = next(csv_reader)
 
     for line in csv_reader:
+      # extract required values using appropriate indexes
       survived = line[1].strip()
       sex = line[14].strip()
       age = line[4].strip()
-      fare = line[8].strip()
+      fare = line[8].strip()  
 
+      # only add the data to the dictionary if not empty
       if (survived != "" and sex != "" and age != "" and fare != ""):
-        data["survived"].append(bool(int(survived)))
+        data['survived'].append(bool(int(survived)))
 
-        if (int(sex) == 0):
-          data["sex"].append("male")
+        if (int(sex) == 0): 
+          data['sex'].append('male')
         else:
-          data["sex"].append("female")
+          data['sex'].append('female')
         
-        data["age"].append(float(age))
-        data["fare"].append(round(float(fare)))
+        data['age'].append(float(age))
+        data['fare'].append(round(float(fare), 2))
+
   return data
+
 
 def plot_age_vs_survival(ax, data):
   # create dictionaries for each age group
@@ -183,4 +187,5 @@ def run():
   
   plt.tight_layout()
   plt.show()
+
 run()
